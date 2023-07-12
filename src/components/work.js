@@ -1,43 +1,44 @@
-import React, { useState } from "react";
-import Workimage from "./workimages";
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const Workmedia = () => {
-  const [items] = useState(Workimage);
+import workImagesData from './workarray.json';
 
-  const navigateToImage = (index) => {
-    const imagePath = Workimage[index].image;
-    const newWindow = window.open(imagePath, "_blank");
-    newWindow.document.documentElement.requestFullscreen();
-  };
+const WorkPage = () => {
+  const [workImages, setWorkImages] = useState([]);
+
+  useEffect(() => {
+    setWorkImages(workImagesData);
+  }, []);
+
   return (
     <div>
       <div className="Galleryimg-items container-fluid mt-5">
-        <h1 style={{ textAlign: "center" }}>Our work</h1>
-        <div className="row">
-          <div className="col-11 mx-auto">
-            <div className="row my-5">
-              {items.map((elem) => {
-                const { id, image } = elem;
-
-                return (
-                  <div className="item2 col-12 col-md-6 col-lg-4 col-xl-3 ">
-                    <div className="img-div col-12">
-                      <img
-                        src={image}
-                        alt="..."
-                        className="d-flex w-100 img-fluid"
-                        onClick={() => navigateToImage(id - 1)}
+      <h1 style={{ textAlign: "center" }}>Our work</h1>
+      <div className="row">
+        {workImages.map((work) => (
+          <div className="item2 col-lg-6" key={work.id}> 
+          
+            <div className="img-div col-4">
+             
+              <img
+                        src={work.image}
+                        alt={work.heading}
+                        className="d-flex  img-fluid"
+                        
                       />
-                    </div>
-                  </div>
-                );
-              })}
+            </div>
+            <div className="details  col-lg-6">
+              <span>
+                <h2>{work.heading}</h2> <br/>
+                <Link to={`/work/${work.id}`}>Read More</Link>
+              </span>
             </div>
           </div>
-        </div>
+        ))}
       </div>
+    </div>
     </div>
   );
 };
 
-export default Workmedia;
+export default WorkPage;

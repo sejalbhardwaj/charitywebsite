@@ -5,7 +5,7 @@ const Donate = () => {
     <>
     <section className='Donation-container'>
     <h1 >Donate Here</h1>
-        <div className="main-container">
+        <div className="donate-main-container">
           <p className='entry-text'>
             Thank you for considering a donation to Matoshri Ahilyabai Holkar Charitable Trust.Together, we can make a difference in the
             lives of those in need.

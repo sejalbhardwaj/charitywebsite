@@ -24,8 +24,31 @@ const Contactus = () => {
                   <h2 className="contact-subheading">To contact us, you can reach out at:</h2>
                   <h2 className="contact-heading">Address:</h2>
                   <span className="contact-details">396, Roshanpur Dourli, Roorkee Road, Meerut, UP</span>
-                  <h2 className="contact-heading">Contact Number:</h2>
+                  <h2 className="contact-heading">Contact Number :</h2>
                   <span className="contact-details">8909111163</span>
+                  <h2 className="contact-heading">Join Us</h2>
+                  <span className="icons ">
+                    <ul>
+                    <li >
+                 
+                  <a href="https://chat.whatsapp.com/JEqnyLuXIsuHtNz20h7FkU"> 
+                  <i className=" fa-solid fa-brands fa-whatsapp"></i>
+                    Join WhatsApp Group - Click here 
+                  </a>
+                </li>
+                  <li>
+                  <a href="https://twitter.com/MatoshriH?s=20">
+                  <i className="fa-solid fa-brands fa-twitter"></i>
+                  Twitter - @MatoshriH</a>
+                </li>
+                <li>
+                <a href="https://www.facebook.com/ahilyabaiholkarcharitabletrust/">
+                          <i className="fa-solid fa-brands fa-facebook fa-lg"></i>
+                          Facebook - matoshriahilyabaiholkercharitabletrust
+                        </a>
+                </li>
+                </ul>
+                  </span>
                 </div>
               </div>
             </div>

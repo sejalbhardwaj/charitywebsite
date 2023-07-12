@@ -15,7 +15,7 @@ const Footer = () => {
               <p>Your donation and contribution can make a huge difference.</p>
             </div>
             <div className="col-4 col-lg-3 col-md-3 col-sm-4">
-              <button className="btn footer-btn" onClick={handleNavigate}>Donate</button>
+              <button className="btn footer-donate donate-button" onClick={handleNavigate}>Donate</button>
             </div>
           </div>
         </div>

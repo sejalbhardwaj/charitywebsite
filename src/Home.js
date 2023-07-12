@@ -7,15 +7,21 @@ import Contactus from "./components/contactus";
 import Footer from "./components/footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+
 const Home = () => {
   return (
     <>
       <Navbar />
-      <Header />
-      <Feature />
-      <About />
-      <Contactus/>
-      <Footer />
+      
+        <div className="content-container">
+        
+          <Header />
+          <Feature />
+          <About />
+          <Contactus/>
+          <Footer />
+       
+      </div>
     </>
   );
 };

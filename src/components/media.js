@@ -10,7 +10,7 @@ const Media = () => {
   };
 
   return (
-    <div>
+    <section className='media'>
       <div className="Galleryimg-items container-fluid mt-5">
       <h1 style={{ textAlign: 'center' }}>Gallery</h1>
         <div className="row">
@@ -20,8 +20,8 @@ const Media = () => {
                 const { id, image } = elem;
 
                 return (
-                  <div className="item1 col-12 col-md-6 col-lg-6 col-xl-4" key={id}>
-                    <div className="img-div col-12">
+                  <div className="media-item col-12 col-md-6 col-lg-6 col-xl-4" key={id}>
+                    <div className="media-img-div col-12">
                       <img src={image} alt="..." className="d-block w-100 img-fluid"  onClick={() => navigateToImage(id - 1)} />
                     </div>
                   </div>
@@ -31,7 +31,7 @@ const Media = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

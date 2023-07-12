@@ -7,6 +7,7 @@ import Work from './pages/workpage';
 import Contactpage from './pages/contactpage';
 import Donatepage from './pages/donatepage';
 import Mediapage from './pages/mediapage';
+import SingleWorkPage from './pages/singleworkpage';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -38,8 +39,10 @@ const router = createBrowserRouter([
   {
     path: "work",
     element: <Work/>, 
-  }
-
+  },
+ { path:"/work/:workId",
+  element:<SingleWorkPage/>,
+}
 
 
 ]);
