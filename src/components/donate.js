@@ -14,13 +14,14 @@ const Donate = () => {
           <div className="row">
             <div className="col-12 col-lg-6">
               <div className="bank-details">
-              <span>
+            
                 <h3>Direct Bank Transfer </h3>
                 <div className="pay-details">
                 <br/>
                 <p>
                   If you prefer to donate via bank transfer, please use the
-                  following details: <br/> <br/>
+                  following details: <br/> <br/> </p>
+
                   <ul>
                     <li>Bank Name: [BankName]</li>
                     <li>Account Name: [Charity Trust Name]</li>
@@ -33,9 +34,9 @@ const Donate = () => {
                       transfer]
                     </li>
                   </ul>
-                </p>
+                
                 </div>
-              </span>
+              
               </div>
              
             </div>
@@ -43,7 +44,7 @@ const Donate = () => {
             <span>
             <div className="pay-img">
                 <h3>QR code</h3>
-                <img src="./photos/QrCode.jpeg" alt="Qrcode" />
+                <img src="./photos/QrCode.jpg" alt="Qrcode" />
               </div>
               </span>
               </div>
