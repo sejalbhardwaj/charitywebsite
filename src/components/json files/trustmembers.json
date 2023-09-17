@@ -1,0 +1,23 @@
+{
+    "trustMembers1": [
+      { "id": 1, "name": "Bhupendra Kumar", "position": "Chairman" },
+      { "id": 2, "name": "Sehdev Pal", "position": "Vice Chairman" },
+      { "id": 3, "name": "Shailendra", "position": "Secretary" },
+      { "id": 4, "name": "Jitendra Pal", "position": "कोषाध्यक्ष" },
+      { "id": 5, "name": "Rampal", "position": "Trustee" },
+      { "id": 6, "name": "Omsingh", "position": "सभासद mzn" },
+      { "id": 7, "name": "Arvind Dhangar", "position": "सभासद mzn" },
+      { "id": 8, "name": "Honey Pal", "position": "सभासद mzn" }
+    ],
+    "trustMembers2": [
+      { "id": 1, "name": "Abhishek Pal", "position": "BDC Meerut Masori" },
+      { "id": 2, "name": "Parveen Pal", "position": "जागृति विहार" },
+      { "id": 3, "name": "Virendra Pal", "position": "Teacher" },
+      { "id": 4, "name": "Kanchan Pal", "position": "Bank Head Cashier" },
+      { "id": 5, "name": "Priyanka Pal", "position": "Khadi Vibhag" },
+      { "id": 6, "name": "Guruvachan Pal", "position": "mzn business man" },
+      { "id": 7, "name": "Lokesh Pal", "position": "mzn business man" },
+      { "id": 8, "name": "Lekh Pal", "position": "mzn business man" }
+    ]
+  }
+  

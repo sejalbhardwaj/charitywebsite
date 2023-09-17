@@ -1,56 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Aboutpage from './pages/aboutpage';
-import Work from './pages/workpage';
-import Contactpage from './pages/contactpage';
-import Donatepage from './pages/donatepage';
-import Mediapage from './pages/mediapage';
-import SingleWorkPage from './pages/singleworkpage';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./index.css";
 
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App/>, 
-  },
-  {
-    path: "about",
-    element: <Aboutpage/>, 
-  },
-  
-  {
-    path: "contact",
-    element: <Contactpage/>, 
-  },
-  {
-    path: "donate",
-    element: <Donatepage/>, 
-  },
-  {
-    path: "media",
-    element: <Mediapage/>, 
-  },
-  {
-    path: "work",
-    element: <Work/>, 
-  },
- { path:"/work/:workId",
-  element:<SingleWorkPage/>,
-}
-
-
-]);
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-  <RouterProvider router={router} />
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
-
-

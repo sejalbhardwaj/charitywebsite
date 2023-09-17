@@ -1,26 +1,7 @@
 import React from "react";
-
+import trustMembersData from "./json files/trustmembers.json";
 const Mainaboutpg = () => {
-  const trustMembers1 = [
-    { name: "Bhupendra Kumar", position: "    Chairman" },
-    { name: "Sehdev Pal", position: "    Vice Chairman" },
-    { name: "Shailendra", position: "    Secretary" },
-    { name: "Jitendra Pal", position: "    कोषाध्यक्ष" },
-    { name: "Rampal", position: "    Trustee" },
-    { name: "Omsingh", position: "    सभासद mzn" },
-    { name: "Arvind Dhangar", position: "    सभासद mzn" },
-    { name: "Honey Pal", position: "     सभासद mzn" },
-  ];
-  const trustMembers2 = [
-    { name: "Abhishek Pal", position: "   BDC Meerut Masori" },
-    { name: "Parveen Pal", position: "    जागृति विहार" },
-    { name: "Virendra Pal", position: "    Teacher" },
-    { name: "Kanchan Pal", position: "    Bank Head Cashier" },
-    { name: "Priyanka Pal", position: "    Khadi Vibhag" },
-    { name: "Guruvachan pal ", position: "      mzn bussines man" },
-    { name: "Lokesh pal", position: "    mzn bussines man" },
-    { name: "Lekh pal", position: "    mzn bussines man" },
-  ];
+  const { trustMembers1, trustMembers2 } = trustMembersData;
   return (
     <>
       <section className="about-container" id="about">
@@ -96,27 +77,25 @@ const Mainaboutpg = () => {
 
                   {/* Trust Members */}
                   <li>
-                    <div className="section-text">
-                      <h2>Trust Members </h2>
+                  <div className="section-text">
+                      <h2>Trust Members</h2>
 
                       <div className="row">
-                        <div className="col-12 col-lg-6 table-format ">
+                        <div className="col-12 col-lg-6 table-format">
                           <table>
                             <thead>
                               <tr>
-                                <th> Name </th>
-
-                                <th> Position </th>
+                                <th>Name</th>
+                                <th>Position</th>
                               </tr>
                             </thead>
                             <tbody>
                               {trustMembers1.map((member) => (
-                                <tr key={member.name}>
+                                <tr key={member.id}>
                                   <td className="data-format">
                                     {" "}
                                     {member.name}{" "}
                                   </td>
-
                                   <td> {member.position} </td>
                                 </tr>
                               ))}
@@ -133,7 +112,7 @@ const Mainaboutpg = () => {
                             </thead>
                             <tbody>
                               {trustMembers2.map((member) => (
-                                <tr key={member.name}>
+                                <tr key={member.id}>
                                   <td>{member.name}</td>
                                   <td>{member.position}</td>
                                 </tr>

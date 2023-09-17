@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import Galleryimg from "./galleryimages";
+import Galleryimg from "./json files/galleryimages.json";
 
 const Media = () => {
   const [items] = useState(Galleryimg);
+  //full size of image
   const navigateToImage = (index) => {
     const imagePath = Galleryimg[index].image;
     const newWindow = window.open(imagePath, "_blank");
